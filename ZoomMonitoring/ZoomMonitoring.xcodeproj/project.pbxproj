@@ -21,6 +21,9 @@
 		4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A332AFB3ECD00378933 /* MainViewController.swift */; };
 		4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */; };
 		4B517A3A2AFB3EE700378933 /* YoloResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A392AFB3EE700378933 /* YoloResult.swift */; };
+		4B517A3E2AFB3EF500378933 /* AnalyzeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3B2AFB3EF500378933 /* AnalyzeScreenViewModel.swift */; };
+		4B517A3F2AFB3EF500378933 /* CaptureScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3C2AFB3EF500378933 /* CaptureScreenViewModel.swift */; };
+		4B517A402AFB3EF500378933 /* ExecuteActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3D2AFB3EF500378933 /* ExecuteActionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		4B517A332AFB3ECD00378933 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureScreenViewController.swift; sourceTree = "<group>"; };
 		4B517A392AFB3EE700378933 /* YoloResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoloResult.swift; sourceTree = "<group>"; };
+		4B517A3B2AFB3EF500378933 /* AnalyzeScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeScreenViewModel.swift; sourceTree = "<group>"; };
+		4B517A3C2AFB3EF500378933 /* CaptureScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureScreenViewModel.swift; sourceTree = "<group>"; };
+		4B517A3D2AFB3EF500378933 /* ExecuteActionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecuteActionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,9 @@
 		4B517A282AFB379A00378933 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4B517A3B2AFB3EF500378933 /* AnalyzeScreenViewModel.swift */,
+				4B517A3C2AFB3EF500378933 /* CaptureScreenViewModel.swift */,
+				4B517A3D2AFB3EF500378933 /* ExecuteActionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -305,14 +314,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */,
+				4B517A3E2AFB3EF500378933 /* AnalyzeScreenViewModel.swift in Sources */,
 				4B517A352AFB3ECD00378933 /* ExecuteActionViewController.swift in Sources */,
 				4B517A3A2AFB3EE700378933 /* YoloResult.swift in Sources */,
 				4B517A362AFB3ECD00378933 /* AnalyzeScreenViewController.swift in Sources */,
 				4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */,
 				4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */,
 				4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */,
+				4B517A402AFB3EF500378933 /* ExecuteActionViewModel.swift in Sources */,
 				4B517A302AFB3EAC00378933 /* YOLOv3Tiny.mlmodel in Sources */,
 				4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */,
+				4B517A3F2AFB3EF500378933 /* CaptureScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
