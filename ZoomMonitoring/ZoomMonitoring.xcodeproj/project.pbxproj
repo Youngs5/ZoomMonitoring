@@ -15,7 +15,11 @@
 		4B517A192AFB36F600378933 /* ZoomMonitoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A182AFB36F600378933 /* ZoomMonitoringUITests.swift */; };
 		4B517A1B2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A1A2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift */; };
 		4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A2B2AFB37B100378933 /* YoloService.swift */; };
-		4B517A2E2AFB37B900378933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A2D2AFB37B900378933 /* MainViewController.swift */; };
+		4B517A302AFB3EAC00378933 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A2F2AFB3EAC00378933 /* YOLOv3Tiny.mlmodel */; };
+		4B517A352AFB3ECD00378933 /* ExecuteActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A312AFB3ECC00378933 /* ExecuteActionViewController.swift */; };
+		4B517A362AFB3ECD00378933 /* AnalyzeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A322AFB3ECD00378933 /* AnalyzeScreenViewController.swift */; };
+		4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A332AFB3ECD00378933 /* MainViewController.swift */; };
+		4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,11 @@
 		4B517A182AFB36F600378933 /* ZoomMonitoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringUITests.swift; sourceTree = "<group>"; };
 		4B517A1A2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B517A2B2AFB37B100378933 /* YoloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloService.swift; sourceTree = "<group>"; };
-		4B517A2D2AFB37B900378933 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4B517A2F2AFB3EAC00378933 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		4B517A312AFB3ECC00378933 /* ExecuteActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecuteActionViewController.swift; sourceTree = "<group>"; };
+		4B517A322AFB3ECD00378933 /* AnalyzeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeScreenViewController.swift; sourceTree = "<group>"; };
+		4B517A332AFB3ECD00378933 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +154,10 @@
 		4B517A292AFB37A000378933 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4B517A2D2AFB37B900378933 /* MainViewController.swift */,
+				4B517A322AFB3ECD00378933 /* AnalyzeScreenViewController.swift */,
+				4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */,
+				4B517A312AFB3ECC00378933 /* ExecuteActionViewController.swift */,
+				4B517A332AFB3ECD00378933 /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 		4B517A2A2AFB37A600378933 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4B517A2F2AFB3EAC00378933 /* YOLOv3Tiny.mlmodel */,
 				4B517A2B2AFB37B100378933 /* YoloService.swift */,
 			);
 			path = Service;
@@ -289,10 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */,
+				4B517A352AFB3ECD00378933 /* ExecuteActionViewController.swift in Sources */,
+				4B517A362AFB3ECD00378933 /* AnalyzeScreenViewController.swift in Sources */,
 				4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */,
 				4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */,
+				4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */,
+				4B517A302AFB3EAC00378933 /* YOLOv3Tiny.mlmodel in Sources */,
 				4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */,
-				4B517A2E2AFB37B900378933 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
