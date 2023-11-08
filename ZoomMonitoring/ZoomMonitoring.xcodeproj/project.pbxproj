@@ -20,6 +20,7 @@
 		4B517A362AFB3ECD00378933 /* AnalyzeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A322AFB3ECD00378933 /* AnalyzeScreenViewController.swift */; };
 		4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A332AFB3ECD00378933 /* MainViewController.swift */; };
 		4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */; };
+		4B517A3A2AFB3EE700378933 /* YoloResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A392AFB3EE700378933 /* YoloResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4B517A322AFB3ECD00378933 /* AnalyzeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeScreenViewController.swift; sourceTree = "<group>"; };
 		4B517A332AFB3ECD00378933 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B517A342AFB3ECD00378933 /* CaptureScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureScreenViewController.swift; sourceTree = "<group>"; };
+		4B517A392AFB3EE700378933 /* YoloResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoloResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		4B517A272AFB379500378933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B517A392AFB3EE700378933 /* YoloResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */,
 				4B517A352AFB3ECD00378933 /* ExecuteActionViewController.swift in Sources */,
+				4B517A3A2AFB3EE700378933 /* YoloResult.swift in Sources */,
 				4B517A362AFB3ECD00378933 /* AnalyzeScreenViewController.swift in Sources */,
 				4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */,
 				4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */,
