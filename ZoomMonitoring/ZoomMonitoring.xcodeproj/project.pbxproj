@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5179FC2AFB36F400378933 /* AppDelegate.swift */; };
 		4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5179FE2AFB36F400378933 /* ViewController.swift */; };
 		4B517A012AFB36F600378933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B517A002AFB36F600378933 /* Assets.xcassets */; };
 		4B517A042AFB36F600378933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B517A022AFB36F600378933 /* Main.storyboard */; };
@@ -24,6 +23,7 @@
 		4B517A3E2AFB3EF500378933 /* AnalyzeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3B2AFB3EF500378933 /* AnalyzeScreenViewModel.swift */; };
 		4B517A3F2AFB3EF500378933 /* CaptureScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3C2AFB3EF500378933 /* CaptureScreenViewModel.swift */; };
 		4B517A402AFB3EF500378933 /* ExecuteActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A3D2AFB3EF500378933 /* ExecuteActionViewModel.swift */; };
+		4B517A422AFB3F0800378933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A412AFB3F0800378933 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		4B5179F92AFB36F400378933 /* ZoomMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5179FC2AFB36F400378933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5179FE2AFB36F400378933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B517A002AFB36F600378933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B517A032AFB36F600378933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		4B517A3B2AFB3EF500378933 /* AnalyzeScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeScreenViewModel.swift; sourceTree = "<group>"; };
 		4B517A3C2AFB3EF500378933 /* CaptureScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureScreenViewModel.swift; sourceTree = "<group>"; };
 		4B517A3D2AFB3EF500378933 /* ExecuteActionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecuteActionViewModel.swift; sourceTree = "<group>"; };
+		4B517A412AFB3F0800378933 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +119,8 @@
 				4B517A292AFB37A000378933 /* ViewController */,
 				4B517A282AFB379A00378933 /* ViewModel */,
 				4B517A272AFB379500378933 /* Model */,
-				4B5179FC2AFB36F400378933 /* AppDelegate.swift */,
 				4B5179FE2AFB36F400378933 /* ViewController.swift */,
+				4B517A412AFB3F0800378933 /* AppDelegate.swift */,
 				4B517A002AFB36F600378933 /* Assets.xcassets */,
 				4B517A022AFB36F600378933 /* Main.storyboard */,
 				4B517A052AFB36F600378933 /* ZoomMonitoring.entitlements */,
@@ -313,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B517A422AFB3F0800378933 /* AppDelegate.swift in Sources */,
 				4B517A372AFB3ECD00378933 /* MainViewController.swift in Sources */,
 				4B517A3E2AFB3EF500378933 /* AnalyzeScreenViewModel.swift in Sources */,
 				4B517A352AFB3ECD00378933 /* ExecuteActionViewController.swift in Sources */,
@@ -323,7 +324,6 @@
 				4B517A382AFB3ECD00378933 /* CaptureScreenViewController.swift in Sources */,
 				4B517A402AFB3EF500378933 /* ExecuteActionViewModel.swift in Sources */,
 				4B517A302AFB3EAC00378933 /* YOLOv3Tiny.mlmodel in Sources */,
-				4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */,
 				4B517A3F2AFB3EF500378933 /* CaptureScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
