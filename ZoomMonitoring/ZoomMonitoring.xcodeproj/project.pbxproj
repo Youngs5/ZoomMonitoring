@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5179FC2AFB36F400378933 /* AppDelegate.swift */; };
+		4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5179FE2AFB36F400378933 /* ViewController.swift */; };
+		4B517A012AFB36F600378933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B517A002AFB36F600378933 /* Assets.xcassets */; };
+		4B517A042AFB36F600378933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B517A022AFB36F600378933 /* Main.storyboard */; };
+		4B517A0F2AFB36F600378933 /* ZoomMonitoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A0E2AFB36F600378933 /* ZoomMonitoringTests.swift */; };
+		4B517A192AFB36F600378933 /* ZoomMonitoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A182AFB36F600378933 /* ZoomMonitoringUITests.swift */; };
+		4B517A1B2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A1A2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift */; };
+		4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A2B2AFB37B100378933 /* YoloService.swift */; };
+		4B517A2E2AFB37B900378933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B517A2D2AFB37B900378933 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B517A0B2AFB36F600378933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B5179F12AFB36F400378933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B5179F82AFB36F400378933;
+			remoteInfo = ZoomMonitoring;
+		};
+		4B517A152AFB36F600378933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B5179F12AFB36F400378933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B5179F82AFB36F400378933;
+			remoteInfo = ZoomMonitoring;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B5179F92AFB36F400378933 /* ZoomMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5179FC2AFB36F400378933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B5179FE2AFB36F400378933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B517A002AFB36F600378933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B517A032AFB36F600378933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B517A052AFB36F600378933 /* ZoomMonitoring.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomMonitoring.entitlements; sourceTree = "<group>"; };
+		4B517A0A2AFB36F600378933 /* ZoomMonitoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomMonitoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B517A0E2AFB36F600378933 /* ZoomMonitoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringTests.swift; sourceTree = "<group>"; };
+		4B517A142AFB36F600378933 /* ZoomMonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomMonitoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B517A182AFB36F600378933 /* ZoomMonitoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringUITests.swift; sourceTree = "<group>"; };
+		4B517A1A2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B517A2B2AFB37B100378933 /* YoloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloService.swift; sourceTree = "<group>"; };
+		4B517A2D2AFB37B900378933 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B5179F62AFB36F400378933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A072AFB36F600378933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A112AFB36F600378933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5179F02AFB36F400378933 = {
+			isa = PBXGroup;
+			children = (
+				4B5179FB2AFB36F400378933 /* ZoomMonitoring */,
+				4B517A0D2AFB36F600378933 /* ZoomMonitoringTests */,
+				4B517A172AFB36F600378933 /* ZoomMonitoringUITests */,
+				4B5179FA2AFB36F400378933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B5179FA2AFB36F400378933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B5179F92AFB36F400378933 /* ZoomMonitoring.app */,
+				4B517A0A2AFB36F600378933 /* ZoomMonitoringTests.xctest */,
+				4B517A142AFB36F600378933 /* ZoomMonitoringUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B5179FB2AFB36F400378933 /* ZoomMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+				4B517A2A2AFB37A600378933 /* Service */,
+				4B517A292AFB37A000378933 /* ViewController */,
+				4B517A282AFB379A00378933 /* ViewModel */,
+				4B517A272AFB379500378933 /* Model */,
+				4B5179FC2AFB36F400378933 /* AppDelegate.swift */,
+				4B5179FE2AFB36F400378933 /* ViewController.swift */,
+				4B517A002AFB36F600378933 /* Assets.xcassets */,
+				4B517A022AFB36F600378933 /* Main.storyboard */,
+				4B517A052AFB36F600378933 /* ZoomMonitoring.entitlements */,
+			);
+			path = ZoomMonitoring;
+			sourceTree = "<group>";
+		};
+		4B517A0D2AFB36F600378933 /* ZoomMonitoringTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B517A0E2AFB36F600378933 /* ZoomMonitoringTests.swift */,
+			);
+			path = ZoomMonitoringTests;
+			sourceTree = "<group>";
+		};
+		4B517A172AFB36F600378933 /* ZoomMonitoringUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B517A182AFB36F600378933 /* ZoomMonitoringUITests.swift */,
+				4B517A1A2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift */,
+			);
+			path = ZoomMonitoringUITests;
+			sourceTree = "<group>";
+		};
+		4B517A272AFB379500378933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B517A282AFB379A00378933 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B517A292AFB37A000378933 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B517A2D2AFB37B900378933 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4B517A2A2AFB37A600378933 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4B517A2B2AFB37B100378933 /* YoloService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B5179F82AFB36F400378933 /* ZoomMonitoring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B517A1E2AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoring" */;
+			buildPhases = (
+				4B5179F52AFB36F400378933 /* Sources */,
+				4B5179F62AFB36F400378933 /* Frameworks */,
+				4B5179F72AFB36F400378933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomMonitoring;
+			productName = ZoomMonitoring;
+			productReference = 4B5179F92AFB36F400378933 /* ZoomMonitoring.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B517A092AFB36F600378933 /* ZoomMonitoringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B517A212AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoringTests" */;
+			buildPhases = (
+				4B517A062AFB36F600378933 /* Sources */,
+				4B517A072AFB36F600378933 /* Frameworks */,
+				4B517A082AFB36F600378933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B517A0C2AFB36F600378933 /* PBXTargetDependency */,
+			);
+			name = ZoomMonitoringTests;
+			productName = ZoomMonitoringTests;
+			productReference = 4B517A0A2AFB36F600378933 /* ZoomMonitoringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B517A132AFB36F600378933 /* ZoomMonitoringUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B517A242AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoringUITests" */;
+			buildPhases = (
+				4B517A102AFB36F600378933 /* Sources */,
+				4B517A112AFB36F600378933 /* Frameworks */,
+				4B517A122AFB36F600378933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B517A162AFB36F600378933 /* PBXTargetDependency */,
+			);
+			name = ZoomMonitoringUITests;
+			productName = ZoomMonitoringUITests;
+			productReference = 4B517A142AFB36F600378933 /* ZoomMonitoringUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B5179F12AFB36F400378933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4B5179F82AFB36F400378933 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					4B517A092AFB36F600378933 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4B5179F82AFB36F400378933;
+					};
+					4B517A132AFB36F600378933 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4B5179F82AFB36F400378933;
+					};
+				};
+			};
+			buildConfigurationList = 4B5179F42AFB36F400378933 /* Build configuration list for PBXProject "ZoomMonitoring" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B5179F02AFB36F400378933;
+			productRefGroup = 4B5179FA2AFB36F400378933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B5179F82AFB36F400378933 /* ZoomMonitoring */,
+				4B517A092AFB36F600378933 /* ZoomMonitoringTests */,
+				4B517A132AFB36F600378933 /* ZoomMonitoringUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B5179F72AFB36F400378933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B517A012AFB36F600378933 /* Assets.xcassets in Resources */,
+				4B517A042AFB36F600378933 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A082AFB36F600378933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A122AFB36F600378933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B5179F52AFB36F400378933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B517A2C2AFB37B100378933 /* YoloService.swift in Sources */,
+				4B5179FF2AFB36F400378933 /* ViewController.swift in Sources */,
+				4B5179FD2AFB36F400378933 /* AppDelegate.swift in Sources */,
+				4B517A2E2AFB37B900378933 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A062AFB36F600378933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B517A0F2AFB36F600378933 /* ZoomMonitoringTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B517A102AFB36F600378933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B517A192AFB36F600378933 /* ZoomMonitoringUITests.swift in Sources */,
+				4B517A1B2AFB36F600378933 /* ZoomMonitoringUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B517A0C2AFB36F600378933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B5179F82AFB36F400378933 /* ZoomMonitoring */;
+			targetProxy = 4B517A0B2AFB36F600378933 /* PBXContainerItemProxy */;
+		};
+		4B517A162AFB36F600378933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B5179F82AFB36F400378933 /* ZoomMonitoring */;
+			targetProxy = 4B517A152AFB36F600378933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B517A022AFB36F600378933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B517A032AFB36F600378933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B517A1C2AFB36F600378933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B517A1D2AFB36F600378933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4B517A1F2AFB36F600378933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomMonitoring/ZoomMonitoring.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoring;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4B517A202AFB36F600378933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZoomMonitoring/ZoomMonitoring.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoring;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4B517A222AFB36F600378933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoomMonitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZoomMonitoring";
+			};
+			name = Debug;
+		};
+		4B517A232AFB36F600378933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoomMonitoring.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZoomMonitoring";
+			};
+			name = Release;
+		};
+		4B517A252AFB36F600378933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZoomMonitoring;
+			};
+			name = Debug;
+		};
+		4B517A262AFB36F600378933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMQRF4ZA4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZoomMonitoring;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B5179F42AFB36F400378933 /* Build configuration list for PBXProject "ZoomMonitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B517A1C2AFB36F600378933 /* Debug */,
+				4B517A1D2AFB36F600378933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B517A1E2AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B517A1F2AFB36F600378933 /* Debug */,
+				4B517A202AFB36F600378933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B517A212AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B517A222AFB36F600378933 /* Debug */,
+				4B517A232AFB36F600378933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B517A242AFB36F600378933 /* Build configuration list for PBXNativeTarget "ZoomMonitoringUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B517A252AFB36F600378933 /* Debug */,
+				4B517A262AFB36F600378933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B5179F12AFB36F400378933 /* Project object */;
+}
