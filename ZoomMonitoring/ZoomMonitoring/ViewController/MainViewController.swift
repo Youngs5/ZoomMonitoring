@@ -1,18 +1,8 @@
-//
-//  MainViewController.swift
-//  Monitoring
-//
-//  Created by 오영석 on 11/1/23.
-//
-
 import Cocoa
 
 class MainViewController: NSViewController {
-    var captureScreenViewController: CaptureScreenViewController?
-    var analyzeScreenViewController: AnalyzeScreenViewController?
-    var executeActionViewController: ExecuteActionViewController?
     var captureScreenViewModel: CaptureScreenViewModel!
-    
+
     private let startButton: NSButton = {
         let button = NSButton(title: "Start", target: nil, action: #selector(startButtonClicked))
         button.bezelStyle = .rounded
@@ -45,12 +35,9 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        captureScreenViewModel = CaptureScreenViewModel(yoloService: YoloService(), analyzeScreenViewModel: AnalyzeScreenViewModel(yoloService: YoloService()))
-        captureScreenViewModel.onPersonDetected = { isPersonDetected in
-            print("사람 감지 여부: \(isPersonDetected)")
-        }
         addViews()
-        setupUI()
+        makeConstraints()
+        configCapture()
     }
     
     override func viewDidAppear() {
@@ -71,36 +58,30 @@ class MainViewController: NSViewController {
         view.addSubview(timerLabel)
     }
     
-    private func setupUI() {
-        captureScreenViewController?.view.frame = view.bounds
-        analyzeScreenViewController?.view.frame = view.bounds
-        executeActionViewController?.view.frame = view.bounds
+    private func makeConstraints() {
+        view.wantsLayer = true
+        view.layer?.zPosition = 0
         
-        if let captureView = captureScreenViewController?.view {
-            captureView.frame = view.bounds
-        }
-        
-        if let analyzeView = analyzeScreenViewController?.view {
-            analyzeView.frame = view.bounds
-        }
-        
-        if let executeView = executeActionViewController?.view {
-            executeView.frame = view.bounds
-        }
+        startButton.target = self
+        endButton.target = self
         
         NSLayoutConstraint.activate([
             startButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
             startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             
             endButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
-            endButton.leadingAnchor.constraint(equalTo: startButton.trailingAnchor, constant: 10)
+            endButton.leadingAnchor.constraint(equalTo: startButton.trailingAnchor, constant: 10),
+            
+            timerLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
+            timerLabel.leadingAnchor.constraint(equalTo: endButton.trailingAnchor, constant: 10)
         ])
-        
-        view.wantsLayer = true
-        view.layer?.zPosition = 0
-        
-        startButton.target = self
-        endButton.target = self
+    }
+    
+    private func configCapture() {
+        captureScreenViewModel = CaptureScreenViewModel(yoloService: YoloService(), analyzeScreenViewModel: AnalyzeScreenViewModel(yoloService: YoloService()))
+        captureScreenViewModel.onPersonDetected = { isPersonDetected in
+            print("사람 감지 여부: \(isPersonDetected)")
+        }
     }
     
     @objc func startButtonClicked() {
@@ -117,9 +98,7 @@ class MainViewController: NSViewController {
         captureScreenViewModel.startCapture()
         
         if let window = view.window {
-//            window.isOpaque = false
             window.backgroundColor = NSColor.clear
-//            window.ignoresMouseEvents = false
         }
     }
     
@@ -132,9 +111,7 @@ class MainViewController: NSViewController {
         captureScreenViewModel.stopCapture()
         
         if let window = view.window {
-//            window.isOpaque = false
             window.backgroundColor = NSColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-//            window.ignoresMouseEvents = true
         }
     }
     
