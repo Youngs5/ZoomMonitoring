@@ -1,8 +1,10 @@
 import Cocoa
 
 class MainViewController: NSViewController {
-    var captureScreenViewModel: CaptureScreenViewModel!
-
+    private var captureScreenViewModel: CaptureScreenViewModel!
+    private var highlightRectLayer: CALayer?
+    private var highlightRectTimer: Timer?
+    
     private let startButton: NSButton = {
         let button = NSButton(title: "Start", target: nil, action: #selector(startButtonClicked))
         button.bezelStyle = .rounded
@@ -79,10 +81,68 @@ class MainViewController: NSViewController {
     
     private func configCapture() {
         captureScreenViewModel = CaptureScreenViewModel(yoloService: YoloService(), analyzeScreenViewModel: AnalyzeScreenViewModel(yoloService: YoloService()))
+        
         captureScreenViewModel.onPersonDetected = { isPersonDetected in
             print("사람 감지 여부: \(isPersonDetected)")
+            
+            if isPersonDetected {
+                self.showHighlightRect()
+            } else {
+                self.hideHighlightRect()
+            }
+        }
+        
+        captureScreenViewModel.onScreenCaptured = { capturedImage in
+            // Do something with the captured image if needed
         }
     }
+
+    private func showHighlightRect() {
+        hideHighlightRect() // Hide previous highlight if any
+        
+        guard let window = view.window, let screen = NSScreen.main else {
+            return
+        }
+        
+        let screenFrame = screen.frame
+        let initialRect = CGRect(x: screenFrame.width / 4, y: screenFrame.height / 4, width: screenFrame.width / 2, height: screenFrame.height / 2)
+        
+        let rectLayer = CALayer()
+        rectLayer.frame = initialRect
+        rectLayer.borderColor = NSColor.green.cgColor
+        rectLayer.borderWidth = 2.0
+        window.contentView?.layer?.addSublayer(rectLayer)
+        
+        highlightRectLayer = rectLayer
+        
+        // Schedule a timer to update the rectangle position every 5 seconds
+        highlightRectTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
+            self?.updateHighlightRectPosition()
+        }
+    }
+    
+    private func updateHighlightRectPosition() {
+        guard let window = view.window, let screen = NSScreen.main else {
+            return
+        }
+        
+        let screenFrame = screen.frame
+        let newRect = CGRect(x: screenFrame.width / 4, y: screenFrame.height / 4, width: screenFrame.width / 2, height: screenFrame.height / 2)
+        
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(0.5)
+        highlightRectLayer?.frame = newRect
+        CATransaction.commit()
+    }
+    
+    private func hideHighlightRect() {
+        highlightRectTimer?.invalidate()
+        highlightRectTimer = nil
+        
+        highlightRectLayer?.removeFromSuperlayer()
+        highlightRectLayer = nil
+    }
+
     
     @objc func startButtonClicked() {
         timer?.invalidate()
@@ -107,6 +167,8 @@ class MainViewController: NSViewController {
         timer = nil
         
         timerLabel.stringValue = "00:00"
+        
+        hideHighlightRect() // Hide the highlight rectangle
         
         captureScreenViewModel.stopCapture()
         
