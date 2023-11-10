@@ -23,13 +23,22 @@ class ZoomStore: ObservableObject {
     func detectFaces() {
         guard let image = image else { return }
         guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else { return }
-        let request = VNDetectFaceRectanglesRequest { request, error in
+        
+        let request = VNDetectFaceRectanglesRequest { [weak self] request, error in
+            guard let self = self else { return }
+            
             if let error = error {
                 print("Face detection error: \(error.localizedDescription)")
             }
+            
             guard let results = request.results as? [VNFaceObservation] else { return }
-            self.faceObservations = results
+            
+            // Ensure updates are on the main thread
+            DispatchQueue.main.async {
+                self.faceObservations = results
+            }
         }
+        
         let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         do {
             try handler.perform([request])
@@ -38,3 +47,4 @@ class ZoomStore: ObservableObject {
         }
     }
 }
+
