@@ -17,17 +17,21 @@ struct ContentView: View {
             HStack {
                 Button("Start") {
                     print("Start button tapped")
+                    zoomStore.startTimer()
                 }
                 .padding()
                 
                 Button("End") {
                     print("End button tapped")
+                    zoomStore.stopTimer()
                 }
                 Button("Capture Screen") {
                     zoomStore.captureScreen()
                 }
                 .padding()
             }
+            
+            Text("\(zoomStore.currentTime)")
             
             if let image = zoomStore.image {
                 ZStack {

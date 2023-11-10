@@ -12,6 +12,39 @@ import Vision
 class ZoomStore: ObservableObject {
     @Published var image: NSImage?
     @Published var faceObservations: [VNFaceObservation] = []
+    @Published var currentTime: String = "00:00"
+    
+    private var timer: Timer?
+    private var startTime: Date?
+    
+    func startTimer() {
+        startTime = Date()
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
+            guard let self = self else { return }
+            self.updateCurrentTime()
+        }
+    }
+    
+    func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+        startTime = nil
+        currentTime = "00:00"
+    }
+    
+    func updateCurrentTime() {
+        guard let startTime = startTime else { return }
+        
+        let elapsedTime = Int(Date().timeIntervalSince(startTime))
+        let minutes = (elapsedTime / 60) % 60
+        let seconds = elapsedTime % 60
+        
+        let formattedTime = String(format: "%02d:%02d", minutes, seconds)
+        
+        DispatchQueue.main.async {
+            self.currentTime = formattedTime
+        }
+    }
     
     func captureScreen() {
         let displayID = CGMainDisplayID()
@@ -47,4 +80,3 @@ class ZoomStore: ObservableObject {
         }
     }
 }
-
