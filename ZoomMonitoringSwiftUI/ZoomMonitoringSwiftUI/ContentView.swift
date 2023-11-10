@@ -14,9 +14,21 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("Capture Screen") {
-                zoomStore.captureScreen()
+            HStack {
+                Button("Start") {
+                    print("Start button tapped")
+                }
+                .padding()
+                
+                Button("End") {
+                    print("End button tapped")
+                }
+                Button("Capture Screen") {
+                    zoomStore.captureScreen()
+                }
+                .padding()
             }
+            
             if let image = zoomStore.image {
                 ZStack {
                     Image(nsImage: image)
