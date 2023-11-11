@@ -48,9 +48,9 @@ struct ContentView: View {
             }
             
             if zoomStore.faceObservations.isEmpty {
-                Text("Hello")
+                Text("감지된 얼굴 없음")
             } else {
-                Text("Number of faces: \(zoomStore.faceObservations.count)")
+                Text("감지된 얼굴 수: \(zoomStore.faceObservations.count)")
             }
         }
     }
