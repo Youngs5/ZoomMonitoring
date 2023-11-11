@@ -47,31 +47,10 @@ class ZoomStore: ObservableObject {
     }
     
     func captureScreen() {
-        if screenRecordingPermission() {
-            // 사용자에게 권한이 부여된 경우 화면 캡처 코드를 수행
-            let displayID = CGMainDisplayID()
-            guard let imageRef = CGDisplayCreateImage(displayID) else {
-                return
-            }
-
-            image = NSImage(cgImage: imageRef, size: NSSize(width: imageRef.width, height: imageRef.height))
-
-            detectFaces()
-        } else {
-            // 사용자에게 권한을 요청하는 다이얼로그를 표시
-            requestScreenRecordingPermission()
-        }
-    }
-    
-    func screenRecordingPermission() -> Bool {
-        // "Screen Recording" 권한 확인 코드
-        return true
-    }
-
-    func requestScreenRecordingPermission() {
-        // 사용자에게 "Screen Recording" 권한을 요청하는 코드
-        // 사용자를 시스템 환경설정으로 안내하고 권한을 요청
-        NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenRecording")!)
+        let displayID = CGMainDisplayID()
+        guard let imageRef = CGDisplayCreateImage(displayID) else { return }
+        image = NSImage(cgImage: imageRef, size: NSSize(width: imageRef.width, height: imageRef.height))
+        detectFaces()
     }
     
     func detectFaces() {
