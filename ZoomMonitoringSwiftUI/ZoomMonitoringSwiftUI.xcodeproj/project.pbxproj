@@ -15,6 +15,8 @@
 		4BC24DB42AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24DB32AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITests.swift */; };
 		4BC24DB62AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24DB52AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift */; };
 		4BC24DC32AFE4974009BE9E4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24DC22AFE4974009BE9E4 /* Store.swift */; };
+		4BC24F212B054328009BE9E4 /* Discord in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC24F202B054328009BE9E4 /* Discord */; };
+		4BC24F232B05434A009BE9E4 /* DiscordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24F222B05434A009BE9E4 /* DiscordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4BC24DD82AFFDBDE009BE9E4 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC24DEB2AFFDC3F009BE9E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC24DF52AFFDC8C009BE9E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC24F112B02AEDE009BE9E4 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4BC24D942AFE47A5009BE9E4 /* ZoomMonitoringSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomMonitoringSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC24D972AFE47A5009BE9E4 /* ZoomMonitoringSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -47,6 +90,8 @@
 		4BC24DB32AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4BC24DB52AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4BC24DC22AFE4974009BE9E4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4BC24DF92AFFDD18009BE9E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4BC24F222B05434A009BE9E4 /* DiscordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC24F212B054328009BE9E4 /* Discord in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +143,13 @@
 		4BC24D962AFE47A5009BE9E4 /* ZoomMonitoringSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4BC24DF92AFFDD18009BE9E4 /* Info.plist */,
 				4BC24D972AFE47A5009BE9E4 /* ZoomMonitoringSwiftUIApp.swift */,
 				4BC24D992AFE47A5009BE9E4 /* ContentView.swift */,
 				4BC24DC22AFE4974009BE9E4 /* Store.swift */,
 				4BC24D9B2AFE47A6009BE9E4 /* Assets.xcassets */,
 				4BC24DA02AFE47A6009BE9E4 /* ZoomMonitoringSwiftUI.entitlements */,
+				4BC24F222B05434A009BE9E4 /* DiscordManager.swift */,
 				4BC24D9D2AFE47A6009BE9E4 /* Preview Content */,
 			);
 			path = ZoomMonitoringSwiftUI;
@@ -142,12 +190,18 @@
 				4BC24D902AFE47A5009BE9E4 /* Sources */,
 				4BC24D912AFE47A5009BE9E4 /* Frameworks */,
 				4BC24D922AFE47A5009BE9E4 /* Resources */,
+				4BC24DD82AFFDBDE009BE9E4 /* Embed Libraries */,
+				4BC24DEB2AFFDC3F009BE9E4 /* CopyFiles */,
+				4BC24DF52AFFDC8C009BE9E4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ZoomMonitoringSwiftUI;
+			packageProductDependencies = (
+				4BC24F202B054328009BE9E4 /* Discord */,
+			);
 			productName = ZoomMonitoringSwiftUI;
 			productReference = 4BC24D942AFE47A5009BE9E4 /* ZoomMonitoringSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +231,7 @@
 				4BC24DAB2AFE47A6009BE9E4 /* Sources */,
 				4BC24DAC2AFE47A6009BE9E4 /* Frameworks */,
 				4BC24DAD2AFE47A6009BE9E4 /* Resources */,
+				4BC24F112B02AEDE009BE9E4 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -220,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 4BC24D8B2AFE47A5009BE9E4;
+			packageReferences = (
+				4BC24F1F2B054328009BE9E4 /* XCRemoteSwiftPackageReference "Discord.swift" */,
+			);
 			productRefGroup = 4BC24D952AFE47A5009BE9E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC24DC32AFE4974009BE9E4 /* Store.swift in Sources */,
+				4BC24F232B05434A009BE9E4 /* DiscordManager.swift in Sources */,
 				4BC24D9A2AFE47A5009BE9E4 /* ContentView.swift in Sources */,
 				4BC24D982AFE47A5009BE9E4 /* ZoomMonitoringSwiftUIApp.swift in Sources */,
 			);
@@ -432,13 +491,18 @@
 				DEVELOPMENT_TEAM = VMQRF4ZA4R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../ZoomSDK";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZoomMonitoringSwiftUI/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../ZoomSDK";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -459,13 +523,18 @@
 				DEVELOPMENT_TEAM = VMQRF4ZA4R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../ZoomSDK";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZoomMonitoringSwiftUI/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../ZoomSDK";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.youngs.ZoomMonitoringSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -585,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BC24F1F2B054328009BE9E4 /* XCRemoteSwiftPackageReference "Discord.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Defxult/Discord.swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BC24F202B054328009BE9E4 /* Discord */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC24F1F2B054328009BE9E4 /* XCRemoteSwiftPackageReference "Discord.swift" */;
+			productName = Discord;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BC24D8C2AFE47A5009BE9E4 /* Project object */;
 }
