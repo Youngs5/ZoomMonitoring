@@ -11,7 +11,7 @@ import Vision
 
 struct ContentView: View {
     @ObservedObject private var zoomStore = ZoomStore()
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -20,24 +20,32 @@ struct ContentView: View {
                     zoomStore.startTimer()
                 }
                 .padding()
-                
+
                 Button("End") {
                     print("End button tapped")
                     zoomStore.stopTimer()
                 }
+
                 Button("Capture Screen") {
                     zoomStore.captureScreen()
                 }
                 .padding()
+
+                Button("Clear") {
+                    print("Clear button tapped")
+                    zoomStore.clearImage()
+                }
+                .padding()
             }
-            
+
             Text("\(zoomStore.currentTime)")
-            
+
             if let image = zoomStore.image {
                 ZStack {
                     Image(nsImage: image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+
                     ForEach(zoomStore.faceObservations, id: \.self) { observation in
                         Rectangle()
                             .stroke(Color.green, lineWidth: 4)
@@ -46,11 +54,11 @@ struct ContentView: View {
                     }
                 }
             }
-            
+
             if zoomStore.faceObservations.isEmpty {
-                Text("감지된 얼굴 없음")
+                Text("No detected faces")
             } else {
-                Text("감지된 얼굴 수: \(zoomStore.faceObservations.count)")
+                Text("Number of detected faces: \(zoomStore.faceObservations.count)")
             }
         }
     }

@@ -12,11 +12,6 @@ struct ZoomMonitoringSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onAppear {
-                    Task {
-                        await DiscordManager.initialize().runBot()
-                    }
-                }
         }
     }
 }

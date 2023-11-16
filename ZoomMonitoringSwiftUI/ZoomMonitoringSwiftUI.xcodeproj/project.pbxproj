@@ -16,7 +16,6 @@
 		4BC24DB62AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24DB52AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift */; };
 		4BC24DC32AFE4974009BE9E4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24DC22AFE4974009BE9E4 /* Store.swift */; };
 		4BC24F212B054328009BE9E4 /* Discord in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC24F202B054328009BE9E4 /* Discord */; };
-		4BC24F232B05434A009BE9E4 /* DiscordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC24F222B05434A009BE9E4 /* DiscordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +90,6 @@
 		4BC24DB52AFE47A6009BE9E4 /* ZoomMonitoringSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMonitoringSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4BC24DC22AFE4974009BE9E4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		4BC24DF92AFFDD18009BE9E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4BC24F222B05434A009BE9E4 /* DiscordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 				4BC24DC22AFE4974009BE9E4 /* Store.swift */,
 				4BC24D9B2AFE47A6009BE9E4 /* Assets.xcassets */,
 				4BC24DA02AFE47A6009BE9E4 /* ZoomMonitoringSwiftUI.entitlements */,
-				4BC24F222B05434A009BE9E4 /* DiscordManager.swift */,
 				4BC24D9D2AFE47A6009BE9E4 /* Preview Content */,
 			);
 			path = ZoomMonitoringSwiftUI;
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC24DC32AFE4974009BE9E4 /* Store.swift in Sources */,
-				4BC24F232B05434A009BE9E4 /* DiscordManager.swift in Sources */,
 				4BC24D9A2AFE47A5009BE9E4 /* ContentView.swift in Sources */,
 				4BC24D982AFE47A5009BE9E4 /* ZoomMonitoringSwiftUIApp.swift in Sources */,
 			);

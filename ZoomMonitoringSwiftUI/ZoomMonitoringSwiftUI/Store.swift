@@ -78,4 +78,9 @@ class ZoomStore: ObservableObject {
             print("Face detection request error: \(error.localizedDescription)")
         }
     }
+    
+    func clearImage() {
+            image = nil
+            faceObservations = []
+        }
 }
